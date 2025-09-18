@@ -1,92 +1,106 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Blog Personal</title>
-    <link rel="icon" type="image/jpeg" href="img/gatito.jpeg">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Blog Personal</title>
+  <link rel="icon" type="image/png" href="gatito.jpeg">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body style="font-family: Arial, sans-serif; background-color: #f2f2f2; margin: 0; padding: 0;">
+<body class="bg-light">
 
-    <!-- Encabezado -->
-    <div style="text-align: center; background-color: darkslategrey; color: white; padding: 15px;">
-        <h1>Mi Blog Personal</h1>
-        <a href="https://www.instagram.com/ia01n/" style="color: white; margin: 0 15px;">Instagram</a>
-        <a href="https://github.com/24040011-cristian" style="color: white; margin: 0 15px;">GitHub</a>
+  <!-- Encabezado -->
+  <header class="bg-dark text-white text-center p-4">
+    <h1 class="mb-3">Mi Blog Personal</h1>
+    <a href="https://www.instagram.com/ia01n/" class="btn btn-outline-light btn-sm mx-1" target="_blank">Instagram</a>
+    <a href="https://github.com/24040011-cristian" class="btn btn-outline-light btn-sm mx-1" target="_blank">GitHub</a>
+  </header>
+
+  <!-- Sobre mí -->
+  <section class="container my-5">
+    <div class="row align-items-center">
+      <div class="col-md-4 text-center">
+        <img src="/img/gatito.jpeg" alt="Este soy yo" class="img-fluid rounded-circle mb-3" style="max-width: 200px;">
+        <p class="fw-bold">Cristian Avendaño del Solar</p>
+      </div>
+      <div class="col-md-8">
+        <h3>Sobre mí</h3>
+        <p>Estudio TSU en Desarrollo de Software en la Universidad Tecnológica de Coahuila.</p>
+        <h3>Lo que me gusta de mi carrera</h3>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">✔ Crear aplicaciones web y móviles</li>
+          <li class="list-group-item">✔ Resolver problemas mediante la programación</li>
+          <li class="list-group-item">✔ Aprender cosas nuevas</li>
+          <li class="list-group-item">✔ Trabajar en equipo</li>
+        </ul>
+      </div>
     </div>
+  </section>
 
-    <!-- Sobre mí -->
-    <div style="display: flex; margin: 20px; background-color: darkslategrey; color: white; padding: 20px; border-radius: 10px;">
-        <div style="margin-right: 20px; text-align: center;">
-            <img src="img/gatito.jpeg" alt="Este soy yo" style="border-radius: 10px; width: 130px; margin-bottom: 10px;">
-            <p>Cristian Avendaño del Solar</p>
-        </div>
-        <div>
-            <h3>Sobre mí</h3>
-            <p>Estudio TSU en Desarrollo de Software en la Universidad Tecnológica de Coahuila.</p>
-            <h3>Lo que me gusta de mi carrera</h3>
-            <ul style="list-style-type: none; padding: 0; margin: 0;">
-                <li>✔ Crear aplicaciones web y móviles</li>
-                <li>✔ Resolver problemas mediante la programación</li>
-                <li>✔ Aprender cosas nuevas</li>
-                <li>✔ Trabajar en equipo</li>
-            </ul>
-        </div>
+  <!-- Tabla de asignaturas -->
+  <section class="container my-5">
+    <div class="text-center mb-4">
+      <img src="/img/assignment.png" alt="materias" class="mb-3" style="max-width: 80px;">
+      <h2>Materias que curso</h2>
     </div>
-
-    <!-- Tabla de asignaturas -->
-    <div style="margin: 20px; text-align: center; background-color: white; padding: 15px; border-radius: 10px;">
-        <img src="img/assignment.png" alt="materias" style="border-radius: 10px; width: 80px;">
-        <h2>Materias que curso</h2>
-        <table style="width: 90%; margin: auto; border-collapse: collapse;">
-            <tr style="background-color: darkslategrey; color: white;">
-                <th style="border: 1px solid black; padding: 8px;">Materia</th>
-                <th style="border: 1px solid black; padding: 8px;">Docente</th>
-                <th style="border: 1px solid black; padding: 8px;">Día</th>
-            </tr>
-            <tr>
-                <td style="border: 1px solid black; padding: 8px;">Estructura de Datos</td>
-                <td style="border: 1px solid black; padding: 8px;">Belén Ligas Ortega</td>
-                <td style="border: 1px solid black; padding: 8px;">Martes, miercoles y viernes</td>
-            </tr>
-            <tr>
-                <td style="border: 1px solid black; padding: 8px;">Aplicaciones Web</td>
-                <td style="border: 1px solid black; padding: 8px;">David López Belmares</td>
-                <td style="border: 1px solid black; padding: 8px;">Lunes, jueves y viernes</td>
-            </tr>
-            <tr>
-                <td style="border: 1px solid black; padding: 8px;">Analisis y Diseño de Software</td>
-                <td style="border: 1px solid black; padding: 8px;">José Martínez Huerta</td>
-                <td style="border: 1px solid black; padding: 8px;">Martes, miércoles y jueves</td>
-            </tr>
-            <tr>
-                <td style="border: 1px solid black; padding: 8px;">Aplicaciones Móviles</td>
-                <td style="border: 1px solid black; padding: 8px;">María Azucena Vallejo Casas</td>
-                <td style="border: 1px solid black; padding: 8px;">Lunes, martes y miércoles</td>
-            </tr>
-        </table>
+    <div class="table-responsive">
+      <table class="table table-striped table-bordered">
+        <thead class="table-dark">
+          <tr>
+            <th>Materia</th>
+            <th>Docente</th>
+            <th>Día</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Estructura de Datos</td>
+            <td>Belén Ligas Ortega</td>
+            <td>Martes, miércoles y viernes</td>
+          </tr>
+          <tr>
+            <td>Aplicaciones Web</td>
+            <td>David López Belmares</td>
+            <td>Lunes, jueves y viernes</td>
+          </tr>
+          <tr>
+            <td>Análisis y Diseño de Software</td>
+            <td>José Martínez Huerta</td>
+            <td>Martes, miércoles y jueves</td>
+          </tr>
+          <tr>
+            <td>Aplicaciones Móviles</td>
+            <td>María Azucena Vallejo Casas</td>
+            <td>Lunes, martes y miércoles</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
+  </section>
 
-    <!-- Comentarios -->
-    <div style="margin: 20px; background-color: white; padding: 20px; border-radius: 10px;">
-        <img src="img/comment.png" alt="comentarios" style="border-radius: 10px; width: 40px;">
-        <h2>Deja tu comentario</h2>
-        <form action="#" method="post">
-            <div style="margin-bottom: 10px; margin-right: 20px;">
-                <label for="nombre">Nombre:</label><br>
-                <input type="text" id="nombre" name="nombre" style="width: 100%; padding: 8px;" required>
-            </div>
-            <div style="margin-bottom: 10px; margin-right: 20px;">
-                <label for="comentario">Comentario:</label><br>
-                <textarea id="comentario" name="comentario" rows="4" style="width: 100%; padding: 8px;" required></textarea>
-            </div>
-            <div>
-                <button type="submit" style="background-color: darkslategrey; color: white; padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer;">Enviar</button>
-            </div>
-        </form>
+  <!-- Comentarios -->
+  <section class="container my-5">
+    <div class="text-center mb-4">
+      <img src="/img/comment.png" alt="comentarios" class="mb-3" style="max-width: 80px;">
+      <h2>Deja tu comentario</h2>
     </div>
+    <form action="#" method="post" class="card p-4 shadow-sm">
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label for="comentario" class="form-label">Comentario:</label>
+        <textarea id="comentario" name="comentario" rows="4" class="form-control" required></textarea>
+      </div>
+      <div class="text-end">
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </div>
+    </form>
+  </section>
 
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
-
