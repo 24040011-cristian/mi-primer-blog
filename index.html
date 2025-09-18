@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Blog Personal</title>
+    <link rel="icon" type="image/png" href="gatito.jpeg">
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f2f2f2; margin: 0; padding: 0;">
+
+    <!-- Encabezado -->
+    <div style="text-align: center; background-color: darkslategrey; color: white; padding: 15px;">
+        <h1>Mi Blog Personal</h1>
+        <a href="https://www.instagram.com/ia01n/" style="color: white; margin: 0 15px;">Instagram</a>
+        <a href="https://github.com/24040011-cristian" style="color: white; margin: 0 15px;">GitHub</a>
+    </div>
+
+    <!-- Sobre mí -->
+    <div style="display: flex; margin: 20px; background-color: darkslategrey; color: white; padding: 20px; border-radius: 10px;">
+        <div style="margin-right: 20px; text-align: center;">
+            <img src="/img/gatito.jpeg" alt="Este soy yo" style="border-radius: 10px; width: 130px; margin-bottom: 10px;">
+            <p>Cristian Avendaño del Solar</p>
+        </div>
+        <div>
+            <h3>Sobre mí</h3>
+            <p>Estudio TSU en Desarrollo de Software en la Universidad Tecnológica de Coahuila.</p>
+            <h3>Lo que me gusta de mi carrera</h3>
+            <ul style="list-style-type: none; padding: 0; margin: 0;">
+                <li>✔ Crear aplicaciones web y móviles</li>
+                <li>✔ Resolver problemas mediante la programación</li>
+                <li>✔ Aprender cosas nuevas</li>
+                <li>✔ Trabajar en equipo</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Tabla de asignaturas -->
+    <div style="margin: 20px; text-align: center; background-color: white; padding: 15px; border-radius: 10px;">
+        <img src="/img/assignment.png" alt="materias" style="border-radius: 10px; width: 80px;">
+        <h2>Materias que curso</h2>
+        <table style="width: 90%; margin: auto; border-collapse: collapse;">
+            <tr style="background-color: darkslategrey; color: white;">
+                <th style="border: 1px solid black; padding: 8px;">Materia</th>
+                <th style="border: 1px solid black; padding: 8px;">Docente</th>
+                <th style="border: 1px solid black; padding: 8px;">Día</th>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black; padding: 8px;">Estructura de Datos</td>
+                <td style="border: 1px solid black; padding: 8px;">Belén Ligas Ortega</td>
+                <td style="border: 1px solid black; padding: 8px;">Martes, miercoles y viernes</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black; padding: 8px;">Aplicaciones Web</td>
+                <td style="border: 1px solid black; padding: 8px;">David López Belmares</td>
+                <td style="border: 1px solid black; padding: 8px;">Lunes, jueves y viernes</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black; padding: 8px;">Analisis y Diseño de Software</td>
+                <td style="border: 1px solid black; padding: 8px;">José Martínez Huerta</td>
+                <td style="border: 1px solid black; padding: 8px;">Martes, miércoles y jueves</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black; padding: 8px;">Aplicaciones Móviles</td>
+                <td style="border: 1px solid black; padding: 8px;">María Azucena Vallejo Casas</td>
+                <td style="border: 1px solid black; padding: 8px;">Lunes, martes y miércoles</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Comentarios -->
+    <div style="margin: 20px; background-color: white; padding: 20px; border-radius: 10px;">
+        <img src="/img/comment.png" alt="comentarios" style="border-radius: 10px; width: 40px;">
+        <h2>Deja tu comentario</h2>
+        <form action="#" method="post">
+            <div style="margin-bottom: 10px; margin-right: 20px;">
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" style="width: 100%; padding: 8px;" required>
+            </div>
+            <div style="margin-bottom: 10px; margin-right: 20px;">
+                <label for="comentario">Comentario:</label><br>
+                <textarea id="comentario" name="comentario" rows="4" style="width: 100%; padding: 8px;" required></textarea>
+            </div>
+            <div>
+                <button type="submit" style="background-color: darkslategrey; color: white; padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer;">Enviar</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
